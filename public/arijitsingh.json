@@ -1,0 +1,71 @@
+{
+  "songs": [
+    {
+      "id": 1,
+      "title": "Channa Mereya",
+      "artist": "Arijit Singh",
+      "url": "/songs/Channa Mereya.mp3",
+      "album": "Yeh dil hai mushkil",
+      "img": "https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7",
+      "playlist": "Arijit Singh",
+      "len":"4:49",
+      "background1":"rgb(110, 62, 4)" ,
+      "background2":"linear-gradient(rgb(86, 49, 4), black)"
+    },
+
+    {
+      "id": 2,
+      "title": "Agar Tum Saath Ho",
+      "artist": "Arijit Singh",
+      "url": "/songs/Agar Tum Saath Ho.mp3",
+      "album": "Tamasha",
+      "img": "https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7",
+      "playlist": "Arijit Singh",
+      "len":"5:41"
+    },
+
+    {
+      "id": 3,
+      "title": "Deva Deva",
+      "artist": "Arijit Singh",
+      "url": "/songs/Deva Deva.mp3",
+      "album": "Brahmastra",
+      "img": "https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7",
+      "playlist": "Arijit Singh",
+      "len":"4:39"
+    },
+
+    {
+      "id": 4,
+      "title": "Satranga",
+      "artist": "Arijit Singh",
+      "url": "/songs/Satranga.mp3",
+      "album": "Animal",
+      "img": "https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7",
+      "playlist": "Arijit Singh",
+      "len":"4:31"
+    },
+
+    {
+      "id": 5,
+      "title": "Kesariya",
+      "artist": "Arijit Singh",
+      "url": "/songs/Kesariya.mp3",
+      "album": "Brahmastra",
+      "img": "https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7",
+      "playlist": "Arijit Singh",
+      "len":"4:28"
+    },
+
+    {
+      "id": 6,
+      "title": "Tum Hi Ho",
+      "artist": "Arijit Singh",
+      "url": "/songs/Tum Hi Ho.mp3",
+      "album": "Aashiqui 2",
+      "img": "https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7",
+      "playlist": "Arijit Singh",
+      "len":"4:21"
+    }
+  ]
+}

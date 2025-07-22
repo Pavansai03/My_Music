@@ -1,0 +1,154 @@
+
+.left {
+    height: 86vh;
+    width: 22vw;
+}
+
+.leftArrow:hover {
+   transform: scale(1.1);
+   cursor: pointer;
+}
+
+.home {
+    margin: 10px;
+    padding: 10px;
+    min-height: 18%;
+}
+
+.home ul {
+   padding:5px
+}
+
+.logo {
+    padding: 2px;
+    margin: 1px;
+    font-weight: 700;
+}
+
+
+.home ul li {
+  width: 22px;
+  padding: 5px;
+  margin-left:3px;
+  font-weight: 600;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.library img {
+   width: 22px 
+}
+
+.library {
+    height:40%;
+    position: relative;
+}
+
+.library-header {
+    height: 15%;
+    justify-content: space-between;
+}
+
+.plus:hover {
+  background-color: rgb(208, 202, 202);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.left-footer {
+    height: 31%;
+    bottom: 0;
+}
+
+.left-footer-box {
+    position: relative;
+    top: 15px;
+    height: 50%;
+    padding: 15px;
+    font-size: 13px;
+    flex-wrap: wrap;
+}
+
+.left-footer-box a {
+    color:#b0adad;
+}
+
+.left-footer-box div {
+    margin: 5px;
+}
+
+.left-footer-box a {
+    text-decoration: none;
+}
+
+.lang {
+    position: relative;
+    top: 5px;
+}
+.lang-btn {
+    border: none;
+    color: white;
+}
+
+.lang-btn:hover {
+    border: 1px solid rgb(58, 56, 56);
+    cursor: pointer;
+}
+
+.lang img {
+    width: 22px;
+}
+
+.text:hover {
+    cursor: pointer;
+    transform: scale(1.04);
+}
+
+ @media (max-width: 1000px){
+   
+   /* .left {
+    transition: all 0.1s linear;
+    position: absolute;
+    left: -100%;
+   } */
+/* 
+   .left-L {
+      left: 0;
+      width: 45vw;
+      border: 5px solid black;
+      font-size: small;
+      background-color: black;
+      z-index: 2;
+      transition: all 0.5s linear;
+   }
+      
+   .left-R {
+    left: -100%;
+    transition: all 0.5s linear;
+   } */
+
+  .sidebar {
+    filter: invert();
+  }
+
+
+  .sidebar:hover {
+    cursor: pointer;
+  }
+
+  .logo{
+    justify-content: space-between;
+  }
+
+  .sidebarClose {
+    filter: invert();
+     left: -100%; 
+     transition: all 0.5s linear;
+  }
+
+  .sidebarClose:hover {
+    cursor: pointer;
+  } 
+ } 

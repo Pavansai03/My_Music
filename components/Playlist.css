@@ -1,0 +1,167 @@
+.myplaylistContainer {
+  border-radius: 7px;
+  background-color: rgb(31, 31, 31);
+  margin-top: 11vh;
+  height: 75vh;
+  width: 76vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.myplaylistContainer::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+    .myplaylistContainer {
+      transition: all 0.1s linear;
+        margin-left: 7px;
+        overflow-y:auto ;
+        width: 99vw;
+    }
+}
+.myplaylistCard {
+  /* border: 2px solid; */
+  height: 30vh;
+  background: rgb(189, 41, 56);
+  /* background: rgb(110, 62, 4); */
+  border-radius: 7px 7px 0 0;
+}
+
+.myplaylistCard img {
+  padding: 15px;
+  border-radius: 20px;
+  width: 300px;
+}
+
+.playlistTitle {
+  justify-content: end;
+  padding-bottom: 20px;
+}
+
+.playlistSongs {
+  /* border: 2px solid; */
+  min-height: 60vh;
+  background: linear-gradient(rgb(149, 18, 42), black);
+  /* background: linear-gradient(rgb(86, 49, 4), black); */
+}
+
+.play-pause {
+  width: 48px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: rgb(19, 216, 19);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.play-pause:hover {
+  transform: scale(1.01);
+  /* transition: all 1.01s linear; */
+  box-shadow: 1px 1px 10px gray;
+  cursor: pointer;
+}
+
+.rightBtns img {
+  width: 20px;
+}
+
+.playlistsBtns {
+  justify-content: space-between;
+}
+
+.header {
+  padding: 20px 0 0 0;
+  height: 50px;
+}
+
+.title {
+  padding: 0 20px;
+}
+#number {
+  padding: 0 18px;
+  min-width: 3%;
+}
+
+#title {
+  width: 30%;
+}
+
+.album {
+  width: 30%;
+}
+
+.date {
+  width: 18%;
+}
+
+.duration {
+  width: 18%;
+  padding: 0 12px;
+}
+
+hr {
+  width: 95%;
+  margin-bottom: 10px;
+  border: none;
+  height: 1px;
+  background-color: rgb(16, 14, 10);
+}
+
+.songNum {
+  padding: 0 18px;
+  min-width: 3%;
+}
+
+.songNum img {
+  width: 30px;
+}
+
+.songName {
+  width: 30%;
+}
+
+.songName img {
+  width: 60px;
+}
+
+.albumName {
+  width: 30%;
+}
+
+.dateAdded {
+  width: 18%;
+}
+
+.songDuration {
+  width: 18%;
+  padding: 0 12px;
+}
+
+.allSongsCard {
+  border: 2px;
+  margin: 10px;
+}
+
+.allSongsCard:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 7px;
+  transition: all 0.1s linear;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.allSongsCardColor {
+  color: green;
+}
+
+/* @media (max-width: 1100px) {
+    *{
+        font-size: 12px;
+     }
+} */
+
+.active-song {
+  color: rgb(19, 216, 19) !important;
+}

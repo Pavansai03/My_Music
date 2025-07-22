@@ -1,0 +1,99 @@
+.border {
+    border: 2px solid red;
+}
+
+.m2{
+    margin: 2px;
+}
+
+.m5 {
+    margin: 5px;
+}
+
+.m10 {
+    margin: 10px;
+}
+.mL15 {
+    margin-left: 15px;
+}
+
+.mR10 {
+    margin-right: 10px;
+}
+
+.p2 {
+    padding: 2px;
+}
+
+.p3 {
+    padding: 3px;
+}
+
+.p5 {
+    padding: 5px;
+}
+
+.p10 {
+    padding: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-c {
+    display: flex;
+    flex-direction: column;
+}
+
+.jc {
+    justify-content: center;
+}
+
+.al {
+    align-items: center;
+}
+
+.g2 {
+    gap: 2px;
+}
+
+.g5 {
+    gap: 5px;
+}
+
+.g10 {
+    gap:10px;
+}
+
+.g15 {
+    gap: 15px;
+}
+
+.g20 {
+    gap: 20px;
+}
+
+.invert {
+    filter: invert();
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+.bg-grey {
+    background-color: rgb(31, 31, 31);
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.rounded-btn {
+    border-radius: 50px;
+}
+
+.rounded {
+    border-radius: 7px;
+}

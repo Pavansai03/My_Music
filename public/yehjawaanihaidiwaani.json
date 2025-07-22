@@ -1,0 +1,82 @@
+{
+  "songs": [
+    {
+      "id": 1,
+      "title": "Badtameez Dil",
+      "artist": "Benny Dayal, Shefali Alvares",
+      "url": "/YJHD songs/Badtameez Dil.mp3",
+      "album": "Yeh jawani hai diwani",
+      "img": "https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4",
+      "playlist": "Yeh Jawani Hai Diwani",
+      "len": "4:12",
+      "background1":"rgb(189, 41, 56)",
+      "background2":"linear-gradient(rgb(149, 18, 42), black)"
+    },
+
+    {
+      "id": 2,
+      "title": "Balam Pichkari",
+      "artist": "Vishal Dadlani",
+      "url": "/YJHD songs/Balam Pichkari.mp3",
+      "album": "Yeh jawani hai diwani",
+      "img": "https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4",
+      "playlist": "Yeh Jawani Hai Diwani",
+      "len":"4.18"
+    },
+
+    {
+      "id": 3,
+      "title": "Dilliwaali Girlfriend",
+      "artist": "Arijit Singh",
+      "url": "/YJHD songs/Dilliwaali Girlfriend.mp3",
+      "album": "Yeh jawani hai diwani",
+      "img": "https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4",
+      "playlist": "Yeh Jawani Hai Diwani",
+      "len": "4:20"
+    },
+
+    {
+      "id": 4,
+      "title": "Ghagra",
+      "artist": "Rekha Bhardwaj",
+      "url": "/YJHD songs/Ghagra.mp3",
+      "album": "Yeh jawani hai diwani",
+      "img": "https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4",
+      "playlist": "Yeh Jawani Hai Diwani",
+      "len": "5:04"
+    },
+
+    {
+      "id": 5,
+      "title": "Ilahi",
+      "artist": "Arijit Singh",
+      "url": "/YJHD songs/Ilahi.mp3",
+      "album": "Yeh jawani hai diwani",
+      "img": "https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4",
+      "playlist": "Yeh Jawani Hai Diwani",
+      "len":"3:48"
+    },
+
+    {
+      "id": 6,
+      "title": "Kabira",
+      "artist": "Tochi Raina",
+      "url": "/YJHD songs/Kabira.mp3",
+      "album": "Yeh jawani hai diwani",
+      "img": "https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4",
+      "playlist": "Yeh Jawani Hai Diwani",
+      "len":"3:43"
+    },
+
+    {
+      "id": 7,
+      "title": "Subhanallah",
+      "artist": "Sreerama Chandra",
+      "url": "/YJHD songs/Subhanallah.mp3",
+      "album": "Yeh jawani hai diwani",
+      "img": "https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4",
+      "playlist": "Yeh Jawani Hai Diwani",
+      "len":"4:09"
+    }
+  ]
+}

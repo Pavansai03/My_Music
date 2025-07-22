@@ -1,0 +1,47 @@
+.right-nav {
+  width: 77vw;
+  position: fixed;
+  margin-left: 22vw;
+  height: 11vh;
+  z-index: 1;
+}
+
+/* @media (max-width: 1000px) {
+  .right-nav {
+    transition: all 0.1s linear;
+    margin-left: 22px;
+    /* width: 99vw; 
+  }
+} */
+
+.rightArrow:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.right-header {
+  height: 6vh;
+  color: #373737;
+  width: 99%;
+  margin: 10px 0px;
+  background-color: #1f1f1f;
+  justify-content: space-between;
+}
+.sign {
+  position: relative;
+  right: 30px;
+}
+
+.sign-up {
+  color: rgb(189, 182, 182);
+  background-color: rgb(31, 31, 31);
+  border: none;
+}
+
+.log-in {
+  color: black;
+}
+.log-in:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+}
