@@ -1,5 +1,5 @@
 import React from "react";
-import "../playlist.css";
+import "../Playlist.css";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { pauseSong, playSong } from "../../src/features/featureSlice";
