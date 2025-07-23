@@ -1,103 +1,131 @@
 .playTools {
-    position: absolute;
-    bottom: 0px;
-    height: 11vh;
-    width: 100%;
-    background-color: black;
-    color: rgb(120, 104, 104);
+  position: absolute;
+  bottom: 0px;
+  height: 11vh;
+  width: 100%;
+  background-color: black;
+  color: rgb(120, 104, 104);
 }
 
 .songinfo {
-    background-color: rgb(31, 31, 31);
-    margin: 5px;
-    border-radius: 10px;
-    width: 22vw;
-    height: 60px;
+  background-color: rgb(31, 31, 31);
+  margin: 5px;
+  border-radius: 10px;
+  width: 22vw;
+  height: 60px;
 }
 
 .songinfo div img {
-    padding: 5px;
-    border-radius: 6px;
-    box-shadow: 1px 1px 5px black;
-    width: 50px;
+  padding: 5px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 5px black;
+  width: 50px;
+}
+
+.footer_text {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.footer_text:hover {
+  white-space: normal;
+  overflow: visible;
+  cursor: pointer;
+  font-size: small;
+  z-index: 10;
 }
 
 .btns {
-    width: 60vw;
+  width: 60vw;
 }
 
 .btnContainer {
-    position: relative;
-    right: 15px;
+  position: relative;
+  right: 15px;
 }
 
 .seekbarContainer {
-    height: 25px;
-    position: relative;
+  height: 25px;
+  position: relative;
 }
 
-
 .seekbarline {
-    position: relative;
-    margin: 10px;
-    width: 70%;
-    height: 15px;
+  position: relative;
+  margin: 10px;
+  width: 70%;
+  height: 15px;
 }
 
 .seekbar {
-   background-color: #373737;
-   border-radius: 10px;
-   width: 100%;
-   height: 3px;
+  background-color: #373737;
+  border-radius: 10px;
+  width: 100%;
+  height: 3px;
 }
 
 .seekbarProgress {
-    position: absolute;
-    background-color: white;
-    height: 3px;
+  position: absolute;
+  background-color: white;
+  height: 3px;
 }
 
 .seekbarProgress {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .seekbarProgress.seeking {
-  background-color: rgb(19, 216, 19); 
+  background-color: rgb(19, 216, 19);
 }
 
 .seekbarProgress.seekOver {
-    background-color: rgb(19, 216, 19) ;
+  background-color: rgb(19, 216, 19);
 }
 
 .circle {
-    position: absolute;
-    border: 5px solid whitesmoke;
-    width: 1px;
-    border-radius: 50%;
-    opacity: 0;
+  position: absolute;
+  border: 5px solid whitesmoke;
+  width: 1px;
+  border-radius: 50%;
+  opacity: 0;
 }
 
-.circle:hover{
-    border: 7px solid whitesmoke;
-    opacity: 100;
+.circle:hover {
+  border: 7px solid whitesmoke;
+  opacity: 100;
 }
 
 .circle-fx {
-    transition: all 0.5s, linear;
-    opacity: 100;
+  transition: all 0.5s, linear;
+  opacity: 100;
 }
 
 .circleClick-fx {
-    opacity: 100;
-    border: 7px solid whitesmoke;
+  opacity: 100;
+  border: 7px solid whitesmoke;
 }
 /* .circle:hover {
     border: 6px solid rgb(19, 216, 19);
 } */
 
+.footer-volumsBtns {
+  gap: 10px;
+}
+
+@media (max-width: 650px) {
+  .footer-volumsBtns {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer-volumsBtns {
+    gap: 2px;
+  }
+}
 
 .volumeTools {
-    width: 20vw;
+  width: 20vw;
 }
 
 .volumeTools ul li {
@@ -105,41 +133,40 @@
 }
 
 .volumeSeekbarContainer {
-    height: 25px;
-    width: 10vw;
-    position: relative;
+  height: 25px;
+  width: 10vw;
+  position: relative;
 }
 
 .volumeSeekbar {
-    position: relative;
-    height: 20px;
-    width: 70%;
+  position: relative;
+  height: 20px;
+  width: 70%;
 }
 
 .volumeSeekbarline {
-    background-color: #373737;
-    position: absolute;
-    width: 100%;
-    height: 3px;
+  background-color: #373737;
+  position: absolute;
+  width: 100%;
+  height: 3px;
 }
 
 .volumeSeekbar:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .volumeProgress {
-    position: absolute;
-    background-color: rgb(19, 216, 19);
-    width: 50%;
-    height: 3px;
+  position: absolute;
+  background-color: rgb(19, 216, 19);
+  width: 50%;
+  height: 3px;
 }
 
 .volumeCircle {
-    left: 50%;
-    position: absolute;
-    border: 6px solid rgb(19, 216, 19);
-    width: 1px;
-    border-radius: 50%;
-    opacity: 100;
+  left: 50%;
+  position: absolute;
+  border: 6px solid rgb(19, 216, 19);
+  width: 1px;
+  border-radius: 50%;
+  opacity: 100;
 }
-

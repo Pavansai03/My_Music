@@ -354,7 +354,7 @@ const Player = () => {
         </div>
 
         <div className="volumeTools flex-c jc al">
-          <ul className="footer-volumsBtns g10 m5 flex">
+          <ul className="footer-volumsBtns border g10 m5 flex">
             <li>
               <svg
                 className="invert"

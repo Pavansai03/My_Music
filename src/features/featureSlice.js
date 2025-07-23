@@ -1,10 +1,13 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-export const fetchSongs = createAsyncThunk("music/fetchSongs", async (albumId) => {
-  const response = await fetch(`/${albumId}.json`);
-  const data = await response.json();
-  return data.songs;
-});
+export const fetchSongs = createAsyncThunk(
+  "music/fetchSongs",
+  async (albumId) => {
+    const response = await fetch(`/${albumId}.json`);
+    const data = await response.json();
+    return data.songs;
+  }
+);
 
 const initialState = {
   songs: [],
@@ -15,7 +18,7 @@ const initialState = {
   playlistTitle: null,
   image: null,
   background1: null,
-  background2: null
+  background2: null,
 };
 
 export const featureSlice = createSlice({
@@ -24,11 +27,11 @@ export const featureSlice = createSlice({
   reducers: {
     setCurrentSong: (state, action) => {
       state.currentSong = action.payload;
-      state.isPlaying = true; 
+      state.isPlaying = true;
     },
 
-    playSong: (state,action) => {
-      state.currentSong = action.payload
+    playSong: (state, action) => {
+      state.currentSong = action.payload;
       state.isPlaying = true;
     },
 
@@ -67,12 +70,13 @@ export const featureSlice = createSlice({
       .addCase(fetchSongs.fulfilled, (state, action) => {
         state.status = "succeeded";
         state.songs = action.payload;
-        state.playlistTitle = action.payload[0].playlist;
-        state.image = action.payload[0].img;
-        state.background1 = action.payload[0].background1;
-        state.background2 = action.payload[0].background2;
-        if(action.payload && action.payload.length > 0) {
+
+        if (action.payload && action.payload.length > 0) {
           state.currentSong = action.payload[0];
+          state.playlistTitle = action.payload[0].playlist;
+          state.image = action.payload[0].img;
+          state.background1 = action.payload[0].background1;
+          state.background2 = action.payload[0].background2;
         }
       })
       .addCase(fetchSongs.rejected, (state, action) => {

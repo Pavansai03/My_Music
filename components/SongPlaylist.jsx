@@ -1,36 +1,61 @@
-import React, { useEffect } from 'react'
-import Left from './Left'
-import './Left.css'
-import './utilities.css'
-import './Playlist.css'
-import PlaylistCard from './cards/PlaylistCard'
-import { useSelector } from 'react-redux'
-import { useParams } from 'react-router-dom'
-import { useDispatch } from 'react-redux'
-import { fetchSongs } from '../src/features/featureSlice'
+import React, { useEffect } from "react";
+import Left from "./Left";
+import "./Left.css";
+import "./utilities.css";
+import "./Playlist.css";
+import "./Albums.css";
+import PlaylistCard from "./cards/PlaylistCard";
+import { useSelector } from "react-redux";
+import { useParams } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { fetchSongs } from "../src/features/featureSlice";
+import { useState } from "react";
 
 const SongPlaylist = () => {
-    const dispatch = useDispatch();
-    const { id } = useParams()
-   useEffect(()=>{
-    dispatch(fetchSongs(id));
-   },[id, dispatch]);
+  const dispatch = useDispatch();
 
-   const { songs, playlistTitle, image, background1, background2 } = useSelector((state)=>state.music);
+  const [clickStatus, setClickStatus] = useState(false);
+  const handleClick = () => {
+    setClickStatus(!clickStatus);
+  };
+  const { id } = useParams();
+  useEffect(() => {
+    dispatch(fetchSongs(id));
+  }, [id, dispatch]);
+
+  const { songs, playlistTitle, image, background1, background2 } = useSelector(
+    (state) => state.music
+  );
 
   return (
     <div>
-      <div className='flex'>
-      <Left/>
+      <div className="flex">
+        {/* <Left /> */}
         <div className="myplaylistContainer">
-          <div 
-          style={{background: `${background1}`}}
-          className="myplaylistCard flex">
+          <div
+            style={{ background: `${background1}` }}
+            className="myplaylistCard flex"
+          >
+            {/* <div className="sidebar">
+              <svg
+                onClick={() => handleClick()}
+                className="mL15 invert"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                role="button"
+                aria-label="Toggle navigation menu"
+                color="#000000"
+                fill="none"
+              ></svg>
+            </div> */}
+
             <img
               aria-hidden="false"
               draggable="false"
               loading="lazy"
-              src= {image}
+              src={image}
               data-testid="card-image"
               alt=""
               className="mMx2LUixlnN_Fu45JpFB yMQTWVwLJ5bV8VGiaqU3 MxmW8QkHqHWtuhO589PV Yn2Ei5QZn19gria6LjZj"
@@ -42,8 +67,9 @@ const SongPlaylist = () => {
           </div>
 
           <div
-          style={{background: `${background2}`}} 
-          className="playlistSongs">
+            style={{ background: `${background2}` }}
+            className="playlistSongs"
+          >
             <div className="playlistsBtns flex p10">
               <div className="leftbtns flex al g20">
                 <div className="play-pause">
@@ -129,8 +155,12 @@ const SongPlaylist = () => {
             </div>
 
             <div className="header flex">
-              <div className="flex al" id="number">#</div>
-              <div className="flex al" id="title">Title</div>
+              <div className="flex al" id="number">
+                #
+              </div>
+              <div className="flex al" id="title">
+                Title
+              </div>
 
               <div className="album flex al">
                 <p>Album</p>
@@ -157,13 +187,12 @@ const SongPlaylist = () => {
               </div>
             </div>
             <hr />
-            <PlaylistCard songs = {songs}/>
+            <PlaylistCard songs={songs} />
           </div>
         </div>
+      </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default SongPlaylist
-
+export default SongPlaylist;

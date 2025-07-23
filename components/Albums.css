@@ -1,19 +1,25 @@
 .right-body {
  /* margin: 4px; */
+ position: fixed;
  border-radius: 7px;
  background-color: rgb(31, 31, 31);
- margin-top: 11vh;
+ /* margin-top: 11vh; */
+ top: 11vh;
+ margin-left: 22vw;
  height: 75vh;
  width: 77vw;
  overflow-x: hidden;
  overflow-y: auto;
 }
-/* @media (max-width:1000px) {
+@media (max-width:1000px) {
     .right-body {
         transition: all 0.1s linear;
-        width: 99vw;
+        margin-left: 9px;
+        width: 98vw;
+        overflow-y: auto;
+
     }
-} */
+}
 
 .right-body::-webkit-scrollbar {
     display: none;

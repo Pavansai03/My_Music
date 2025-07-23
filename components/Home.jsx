@@ -5,7 +5,7 @@ import Albums from './Albums'
 const Home = () => {
   return (
     <div className='flex'>
-      <Left/>
+      {/* <Left/> */}
       <Albums/>
     </div>
   )

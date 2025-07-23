@@ -6,13 +6,13 @@
   z-index: 1;
 }
 
-/* @media (max-width: 1000px) {
+@media (max-width: 1000px) {
   .right-nav {
     transition: all 0.1s linear;
-    margin-left: 22px;
-    /* width: 99vw; 
+    margin-left: 9px;
+     width: 98vw; 
   }
-} */
+}
 
 .rightArrow:hover {
   transform: scale(1.1);
