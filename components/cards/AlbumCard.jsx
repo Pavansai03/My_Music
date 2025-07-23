@@ -17,7 +17,7 @@ const AlbumCard = () => {
             // onClick={() => handleClick(item)}
             onMouseEnter={() => sethover(index)}
             onMouseLeave={() => sethover(null)}
-            className="song cardfx"
+            className="song border cardfx"
           >
             <div
               className={`card-playbtn ${

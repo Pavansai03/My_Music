@@ -69,6 +69,12 @@ Then in card container - scroll-snap-align:start(to align at starting of every c
     color: white;
     text-decoration: none;
 }
+@media (max-width:550px) {
+    .song {
+        transition: all 0.5s linear;
+        flex: 0 0 120px;
+    }
+}
 
 .song:hover {
     cursor: pointer;
@@ -140,6 +146,13 @@ Then in card container - scroll-snap-align:start(to align at starting of every c
     scroll-snap-align:start ;
     color: white;
     text-decoration: none;
+}
+
+@media (max-width:550px) {
+    .artist {
+        transition: all 0.5s linear;
+        flex: 0 0 120px;
+    }
 }
 
 .artist:hover {

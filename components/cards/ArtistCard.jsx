@@ -17,7 +17,7 @@ const ArtistCard = () => {
             key={item.id}
             onMouseEnter={()=>sethover(index)}
             onMouseLeave={()=>sethover(null)}
-            className="artist cardfx">
+            className="artist border cardfx">
               <div className={`card-playbtn ${hover === index ?"visible":"invisible"}`}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

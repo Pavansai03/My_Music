@@ -15,9 +15,9 @@ const SongPlaylist = () => {
   const dispatch = useDispatch();
 
   const [clickStatus, setClickStatus] = useState(false);
-  const handleClick = () => {
-    setClickStatus(!clickStatus);
-  };
+  // const handleClick = () => {
+  //   setClickStatus(!clickStatus);
+  // };
   const { id } = useParams();
   useEffect(() => {
     dispatch(fetchSongs(id));

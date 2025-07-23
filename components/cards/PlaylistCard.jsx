@@ -42,8 +42,7 @@ const PlaylistCard = ({songs}) => {
             key={item.id}
             onClick={() => handleClick(item)}
             className={`allSongs ${
-              currentSong && currentSong.id === item.id ? "active-song" : ""
-            }`}
+              currentSong && currentSong.id === item.id ? "active-song" : ""}`}
           >
             <div className="allSongsCard flex">
               <div className="songNum flex al">

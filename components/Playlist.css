@@ -164,6 +164,15 @@ hr {
      }
 } */
 
-.active-song {
-  color: rgb(19, 216, 19) !important;
+
+.active-song .songCard-title h5,
+.active-song .songCard-title p,
+.active-song .albumName,
+.active-song .dateAdded,
+.active-song .songDuration {
+  color: rgb(19, 215, 19); /* Apply the green color */
 }
+
+/* .active-song {
+  color: rgb(19, 216, 19) !important;
+} */
