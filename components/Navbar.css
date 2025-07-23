@@ -10,9 +10,15 @@
   .right-nav {
     transition: all 0.1s linear;
     margin-left: 9px;
-     width: 98vw; 
+    width: 98vw; 
   }
 }
+
+/* @media (max-width:650px) {
+  .right-nav {
+    justify-content: center;
+  }
+} */
 
 .rightArrow:hover {
   transform: scale(1.1);

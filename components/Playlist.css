@@ -16,10 +16,10 @@
 
 @media (max-width: 1000px) {
   .myplaylistContainer {
-     transition: all 0.1s linear;
-        margin-left: 9px;
-        width: 98vw;
-        overflow-y: auto;
+    transition: all 0.1s linear;
+    margin-left: 9px;
+    width: 98vw;
+    overflow-y: auto;
   }
 }
 .myplaylistCard {
@@ -34,6 +34,19 @@
   padding: 15px;
   border-radius: 20px;
   width: 300px;
+}
+
+@media (max-width: 500px) {
+  .myplaylistCard {
+    transition: all 0.5s linear;
+    height: 20vh;
+  }
+
+  .myplaylistCard img {
+    transition: all 0.5s linear;
+
+    width: 200px;
+  }
 }
 
 .playlistTitle {
@@ -163,8 +176,7 @@ hr {
         font-size: 12px;
      }
 } */
-
-
+.active-song .songNum,
 .active-song .songCard-title h5,
 .active-song .songCard-title p,
 .active-song .albumName,
